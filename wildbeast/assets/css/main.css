@@ -1,0 +1,137 @@
+.contend {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.1), -1px 0px 3px 1px rgba(0, 0, 0, 0.1)
+  ;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 30px;
+}
+
+.contend p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.-infos p + p{
+  margin-top: 30px;
+}
+
+.titulo {
+  color: #b07dfb;
+}
+
+.titulo h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #8844ee,
+    #b07dfb
+  );
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.caracteristicas span {
+  display: block;
+}
+
+.caracteristicas .numero {
+  color: #b07dfb;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 5px auto;
+}
+
+.caracteristicas .rotulo {
+  background: #fff;
+  border-radius: 0px 0px 3px 3px;
+  color: #b07dfb;
+  padding: 5px 0px;
+  position: relative;
+  top: 1px;
+}
+
+.contend .destaque {
+  font-size: 0.875rem;
+  color: #b07dfb;
+  width: 30ch;
+}
+
+
+.citacao,
+.habilidades {
+  align-self: start;
+  background: linear-gradient(
+    135deg,
+    #8844ee,
+    #b07dfb
+  );
+  padding: 30px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.citacao p {
+  color: inherit;
+}
+
+.citacao {
+  text-align: center;
+}
+
+
+.habilidades li + li {
+  margin-top: 5px;
+  border-top: 1px solid #b07dfb;
+}
+.habilidades li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125rem;
+  padding: 15px;
+  
+}
+
+.img-3 {
+  width: 100%;
+}
+
+@media(max-width: 600px) {
+  .contend {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .contend img {
+    width: 100%;
+  }
+
+  .contend p {
+    font-size: 1rem;
+  }
+}

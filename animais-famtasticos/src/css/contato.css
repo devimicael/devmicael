@@ -1,0 +1,42 @@
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.dados li::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  background-color: #fb5;
+  margin-right: 1rem;
+}
+
+.dados li:focus {
+  outline: 2px solid #e54;
+  outline-offset: 2px;
+}
+
+[data-bitcoin] {
+ background: #e54;
+ padding: .2rem .4rem;
+ border-radius: 4px;
+ font-weight: bold;
+ color: #fff;
+ display: inline-block;
+ border: 2px solid #333;
+}
+
+@media(max-width: 700px) {
+  .dados, .mapa {
+    grid-column: 1 / 3;
+  }
+}
