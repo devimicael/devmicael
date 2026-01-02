@@ -1,0 +1,64 @@
+.asidnav {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.asidnav a {
+  padding: 15px;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  transition: .3s ease-out;
+}
+
+.asidnav a:hover {
+  background-color: #b07dfb;
+}
+
+.asidnav img {
+  width: 90px;
+  min-width: 60px;
+}
+
+@media(max-width: 760px) {
+  .asidnav-bg {
+    padding: 15px;
+  }
+
+  .asidnav {
+    max-width: 800px;
+    gap: 30px;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 15px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .asidnav li {
+    flex: 1 0 100px;
+  }
+
+  .asidnav::after {
+    content: "→";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    right: 80px;
+    color: rgba(0, 0, 0, .3);
+    animation: ceta .5s ease-in 0s infinite alternate;
+  }
+}
+
+@keyframes ceta {
+  from {
+    right: 80px;
+  }
+
+  to {
+    right: 90px;
+  }
+}

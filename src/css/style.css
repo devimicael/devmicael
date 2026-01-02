@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import "./root.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
+
+@import "./sections/hero.css";
+@import "./sections/about.css";

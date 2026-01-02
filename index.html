@@ -1,87 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Davi | Developer & Criador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Davi - Desenvolvedor em evolução constante. Foco em fundamentos sólidos e código que faz sentido."
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor, frontend, JavaScript, HTML, CSS, programador"
+    />
+    <meta name="author" content="Davi" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Davi Micael</title>
+  <body>
+    <header class="header-bg">
+      <div class="header-content container">
+        <div>
+          <a href="./index.html" class="logo">Devi<span>.</span></a>
+          <p class="sub">Desenvolvedor em evolução constante</p>
+        </div>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        <nav aria-label="Primaria navegação">
+          <ul class="header-nav">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    header,
-    section,
-    footer {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: .5rem 1rem;
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="thought-container">
+            <div id="thought">"Cada linha de código é uma decisão."</div>
+          </div>
+          <h2>
+            Esse portfólio não é vitrine. <br />
+            É <span class="grandient-text">quem eu sou</span>.
+          </h2>
+          <p>
+            Sou o Davi. Desenvolvedor em formação, curioso por natureza e focado
+            em entender como as coisas funcionam de verdade. Não busco atalhos —
+            busco base sólida.
+          </p>
 
-      display: grid;
-      gap: .5rem;
-    }
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Ver meus projetos</a>
+            <a href="#contact" class="btn btn-secondary">Entre em contato</a>
+          </div>
+        </div>
+      </section>
 
-    ul {
-      list-style: decimal;
-    }
+      <section id="about">
+        <div class="container">
+          <h3 class="section-title">Minha Jornada</h3>
 
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-    }
+          <div class="skills-grid">
+            <div class="card fade-in">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Onde estou hoje</h3>
+              <p>
+                Domino HTML, CSS e JavaScript puro. Consigo criar interfaces
+                responsivas, organizar lógicas complexas e estruturar aplicações
+                escaláveis com foco em performance.
+              </p>
+            </div>
 
-    h2 {
-      margin-top: 1rem;
-    }
+            <div class="card fade-in">
+              <i class="fas fa-brain"></i>
+              <h3>Como eu aprendo</h3>
+              <p>
+                Aprendo construindo projetos reais, aprendendo com os erros e
+                entendendo o porquê. Prefiro aprender devagar e certo do que
+                rápido e superficial.
+              </p>
+            </div>
 
-    li+li {
-      margin-top: 0.3rem;
-    }
-  </style>
-</head>
+            <div class="card fade-in">
+              <i class="fas fa-rocket"></i>
+              <h3>Até onde posso chegar</h3>
+              <p>
+                Meu objetivo é evoluir para desenvolvedor fullstack, com domínio
+                sólido de JavaScript, backend, arquitetura e decisões de
+                produto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<body>
-  <header>
-    <h1>Davi Micael</h1>
-    <p>Desenvolvedor Front-End & Futuro Full-Stack</p>
-  </header>
+      <section id="skills">
+        <div class="container">
+          <h3 class="section-title">O que eu sei hoje</h3>
 
-  <section>
-    <h2>Sobre Mim</h2>
-    <p>Sou um entusiasta da programação apaixonado por transformar ideias em código. Atualmente focado em projetos com HTML, CSS e JavaScript puro.</p>
-  </section>
+          <div class="skills-grid">
+            <div class="card fade-in">
+              <h3>
+                <i class="fas fa-code"></i>
+                Frontend
+              </h3>
 
-  <section>
-    <h2>Projetos</h2>
+              <ul>
+                <li>HTML Semântico & Acessibilidade</li>
+                <li>CSS Moderno (Flexbox, Grid, Animations)</li>
+                <li>JavaScript Vanilla (ES6+)</li>
+                <li>Tailwind CSS</li>
+                <li>React</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
 
-    <ul>
-      <li><a href="./timer/index.html" target="_blank" rel="noopener noreferrer">Timer</a></li>
-      <li><a href="./adivinha/index.html" target="_blank" rel="noopener noreferrer">Adivinhação</a></li>
-      <li><a href="./lightbox/index.html" target="_blank" rel="noopener noreferrer">Lightbox</a></li>
-      <li><a href="./paleta-de-cores/" target="_blank" rel="noopener noreferrer">Paleta de Cores</a></li>
-      <li><a href="./todo/index.html" target="_blank" rel="noopener noreferrer">To-Do</a></li>
-      <li><a href="./game/index.html" target="_blank" rel="noopener noreferrer">Mini Game</a></li>
-      <li><a href="./bikcraft/index.html" target="_blank" rel="noopener noreferrer">Bikcraft</a></li>
-      <li><a href="./flexblog/index.html" target="_blank" rel="noopener noreferrer">flexblog</a></li>
-      <li><a href="./wildbeast/index.html" target="_blank" rel="noopener noreferrer">wildbeast</a></li>
-      <li><a href="./animais-famtasticos/index.html" target="_blank" rel="noopener noreferrer">Animais Fantásticos</a></li>
-      <li><a href="./forest/index.html" target="_blank" rel="noopener noreferrer">Forest</a></li>
-    </ul>
+            <div class="card fade-in">
+              <h3>
+                <i class="fas fa-cogs"></i>
+                Ferramentas
+              </h3>
 
-  </section>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </div>
 
-  <section>
-    <h2>Contato</h2>
-    <p>GitHub: <a href="https://github.com/devimicael" target="_blank">github.com/devimicael</a></p>
-  </section>
+            <div class="card fade-in">
+              <h3>
+                <i class="fas fa-chart-line"></i>
+                Em Desenvolvimento
+              </h3>
 
-  <footer>
-    <p>&copy; 2024 Davi Micael. Todos os direitos reservados.</p>
-  </footer>
+              <ul>
+                <li>React com TypeScript</li>
+                <li>Node.js & Express</li>
+                <li>Testes Automatizados</li>
+                <li>Performance Web</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <footer class="footer-bg">
+        <div class="container">
+          <div class="social-links">
+            <a
+              href="https://github.com/devimicael/devimicael"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/davi-micael-34687b28b/"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
 
+          <p class="copyright">© 2026 — Davi. Em construção constante.</p>
+          <p class="copyright" style="margin-top: 10px; font-size: 0.8rem">
+            Criado com código limpo e intenção clara.
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
 </html>

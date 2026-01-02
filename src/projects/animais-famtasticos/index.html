@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.className+=" js";</script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
+  <title>Animais Fantásticos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <nav aria-label="Navegação principal" class="nav-menu" data-smooth="menu">
+      <button 
+        data-menu="button" 
+        type="button" 
+        aria-expanded="false"
+        aria-controls="menu"
+        >Menu
+      </button>
+      <ul data-menu="lista" id="menu">
+        <li><a href="#animais">animais</a></li>
+        <li data-dropdown>
+          <a href="./sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="./empresa.html">Empresa</a></li>
+            <li><a href="./equipe.html">Equipe</a></li>
+            <li><a href="./socios.html">Socios</a></li>
+            <li><a href="./investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">faq</a></li>
+        <li><a href="#contato">contato</a></li>
+        <li><a rel="noopener" href="http://github.com/devimicael" target="_blank">dev ⇎</a></li>
+        <li data-modal="login"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  
+    <section class="grid-section animais" id="animais">
+      <h1 class="titulo">Animais<br>Fantásticos</h1>
+  
+      <ul class="animais-lista" data-tab="menu">
+        <li><img src="./src/img/imagem1.jpg" alt="raposa"></li>
+        <li><img src="./src/img/imagem2.jpg" alt="esquilo"></li>
+        <li><img src="./src/img/imagem3.jpg" alt="urso"></li>
+        <li><img src="./src/img/imagem4.jpg" alt="lobo"></li>
+        <li><img src="./src/img/imagem5.jpg" alt="macaco"></li>
+        <li><img src="./src/img/imagem6.jpg" alt="leão"></li>
+      </ul>
+  
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Raposa</h2>
+          <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+          <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+        </section>
+  
+        <section data-anime="show-down">
+          <h2>Esquilo</h2>
+          <p>O esquilo ou esquilho (Sciurus vulgaris, latim) é um mamífero carnívoro da família Sciuridae. Sua alimentação consiste principalmente em nozes, sementes, frutas e insetos.</p>
+          <p>Os esquilos geralmente apresentam um corpo ágil, com membros anteriores e posteriores bem desenvolvidos.</p>
+        </section>
+  
+        <section data-anime="show-right">
+          <h2>Urso</h2>
+          <p>Os ursos (Ursus, latim) são mamíferos carnívoros pertencentes à família Ursidae. Sua alimentação pode variar de carnívora a onívora, dependendo da espécie.</p>
+        </section>
+  
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>Os lobos (Canis lupus, latim) são mamíferos carnívoros da família Canidae. São conhecidos por sua inteligência e por viverem em grupos sociais complexos.</p>
+        </section>
+  
+        <section data-anime="show-right">
+          <h2>Macaco</h2>
+          <p>Os macacos (Macaca, latim) são mamíferos primatas da família Simiiformes. São conhecidos por sua habilidade em usar ferramentas e pela complexidade de seus comportamentos sociais.</p>
+        </section>
+  
+        <section data-anime="show-down">
+          <h2>Leão</h2>
+          <p>Os leões (Panthera leo, latim) são mamíferos carnívoros da família Felidae. São conhecidos como os "reis da selva" devido à sua posição no topo da cadeia alimentar.</p>
+        </section>
+      </div>
+    </section>
+  
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+  
+      <dl class="faq-lista " data-anime="acoordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>Varia de acordo com a espécie.</dd>
+  
+        <dt>Qual a diferença entre as espécies?</dt>
+        <dd>A diferença entre as espécies pode ser observada em vários aspectos, como hábitos alimentares, habitat e comportamento social.</dd>
+  
+        <dt>Como proteger os animais?</dt>
+        <dd>Podemos proteger os animais por meios adequados, como a conservação de seus habitats naturais e a intervenção de profissionais da área.</dd>
+  
+        <dt>Os animais são fantásticos?</dt>
+        <dd>Sim, eles podem ser encontrados em muitas partes do mundo e possuem características incríveis que os tornam únicos.</dd>
+  
+        <dt>Como posso fazer uma doação?</dt>
+        <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista, aceitamos PIX e Boleto.</dd>
+      </dl>
+    </section>
+  
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+
+      <div class="grid-numeros"></div>
+    </section>
+
+
+
+    <section class="grid-section contato" data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+  
+      <div class="mapa" data-tooltip aria-label="Mapa mostrando a localização em Rua logo ali, 1003 - República">
+        <img src="./src/img/mapa.png" alt="Mapa mostrando a localização em Rua logo ali, 1003 - República">
+      </div>
+  
+      <ul class="dados">
+        <li>contato@devimicael.com</li>
+        <li>+55 (81) 9.73149091</li>
+        <li>Rua logo ali, 1003 - República</li>
+        <li>Pernambuco - PE</li>
+        <li>Doe <span data-bitcoin>0</span> bitcoin para nos ajudar.</li>
+        <li data-funcionamento>Seg à Sex das 8h às 18h</li>
+      </ul>
+    </section>
+  
+    <footer class="copy">
+      <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button type="button" data-modal="closer">X</button>
+
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="off">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" autocomplete="off">
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="./src/js/script.min.js"></script>
+</body>
+</html>

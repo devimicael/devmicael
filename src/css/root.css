@@ -1,0 +1,15 @@
+:root {
+  --bg: #0f0f14;
+  --panel: #15151d;
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+  --border: #2a2a3a;
+
+  --green: #00ff88;
+  --blue: #3b82f6;
+  --purple: #7c3aed;
+  --cyan: #06b6d4;
+
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s ease;
+}

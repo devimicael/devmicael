@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(transparent 95%, rgba(255, 255, 255, 0.03) 96%),
+    linear-gradient(90deg, transparent 95%, rgba(255, 255, 255, 0.03) 96%),
+    radial-gradient(circle at top, #14141f, var(--bg));
+  background-size: 40px 40px, 40px 40px, cover;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grandient-text {
+  background: linear-gradient(90deg, var(--green), var(--blue), var(--purple));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient 6s linear infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  display: grid;
+  gap: 20px;
+}
