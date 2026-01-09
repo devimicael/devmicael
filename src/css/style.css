@@ -3,6 +3,12 @@
 
 @import "./global/header.css";
 @import "./global/footer.css";
+@import "./global/buttons.css";
 
 @import "./sections/hero.css";
 @import "./sections/about.css";
+@import "./sections/skills.css";
+@import "./sections/projects.css";
+@import "./sections/approach.css";
+@import "./sections/goals.css";
+@import "./sections/contact.css";

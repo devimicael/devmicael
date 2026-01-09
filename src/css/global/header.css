@@ -1,18 +1,15 @@
 .header-bg {
-  padding: 30px 0px;
+  padding: 20px 0;
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(15, 15, 20, 0.9);
-  backdrop-filter: blur(10px);
   z-index: 10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
 }
 
-.header-content {
+.header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -20,54 +17,55 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
+  color: var(--green);
 }
 
 .logo span {
-  color: var(--green);
+  color: var(--blue);
 }
 
-.sub {
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-top: 4px;
-}
-
-.header-nav {
+.nav-list {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
-.header-nav a {
+.nav-list a {
+  color: var(--muted);
   font-weight: 500;
-  transition: var(--transition);
-  padding: 8px 0;
   position: relative;
-  font-size: 0.9rem;
+  padding: 5px 0;
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.header-nav a:hover {
-  color: var(--green);
+.nav-list a:hover {
+  color: var(--text);
 }
 
-.header-nav a::after {
+.nav-list a::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--green);
-  transition: width 0.3s ease;
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  transition: var(--transition);
 }
 
-.header-nav a:hover::after {
+.nav-list a:hover::after {
   width: 100%;
 }
 
-@media (max-width: 700px) {
-  .header-nav {
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 15px;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
   }
 }

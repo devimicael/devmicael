@@ -1,17 +1,16 @@
 export default function thoughts() {
   const thoughts = [
-    "Código é meio. Visão é o fim.",
-    "Menos hype. Mais fundamento.",
+    "Código é commodity. Pensamento é diferencial.",
     "Prefiro clareza hoje do que dor amanhã.",
-    "Esse portfólio sou eu, agora.",
     "Aprender certo vale mais que aprender rápido.",
     "Cada linha de código é uma decisão.",
-    "Simplicidade é sofisticação.",
-    "O melhor momento para começar era ontem. O segundo melhor é agora.",
+    "Fundamentos sólidos superam modismos passageiros.",
+    "Entender o porquê é mais valioso que saber o quê.",
+    "Simplicidade é o último grau de sofisticação.",
+    "Evolução constante, resultados consistentes.",
   ];
 
   const thoughtEl = document.getElementById("thought");
-  console.log(thoughtEl);
   let index = 0;
 
   const rotateThought = () => {

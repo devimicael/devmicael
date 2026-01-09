@@ -1,7 +1,7 @@
 export default function animationScroll() {
-  const fadeElements = document.querySelectorAll(".fade-in");
+  const fadeElements = document.querySelectorAll(".fade-in, .card, .project-card, .approach-item, .goal, .stat");
   if (fadeElements.length === 0) return;
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -14,5 +14,4 @@ export default function animationScroll() {
   });
 
   fadeElements.forEach(el => observer.observe(el));
-
 }

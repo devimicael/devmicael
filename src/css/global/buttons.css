@@ -1,0 +1,54 @@
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--blue), var(--purple));
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--green);
+}
+
+.btn-secondary:hover {
+  background: var(--green);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--panel);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 10px 10px 0;
+  transition: var(--transition);
+  border: 1px solid var(--border);
+}
+
+.contact-btn:hover {
+  background: var(--green);
+  color: var(--bg);
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
